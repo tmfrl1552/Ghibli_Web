@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>In the Ghibli World</title>
+    <link rel="stylesheet" href="main-layout.css">
+    <link rel="stylesheet" href="menu-layout.css">
+
+    <style type="text/css">
+      .fig-div{
+        text-align: center;
+      }
+
+      section div{
+        font-family: NanumBarunGothic;
+        word-spacing: 8px;
+        line-height: 25px;
+      }
+
+      section h2{
+        font-family: NanumBarunGothic;
+        font-weight: bold;
+      }
+
+    </style>
+    <script type="text/javascript">
+      var num = 1;
+      function addText(){
+        alert("명언을 남기시겠습니까?");
+        var txt = document.getElementById("inputText");
+        var sel = document.getElementById("sel");
+        var txtarea = document.getElementById("txtarea");
+        var val;
+          for(i=0; i<sel.options.length; i++) {
+              if(sel.options[i].selected == true) {
+                  val = sel.options[i].value;
+                  break;
+              }
+          }
+          if(txt.value == ""){
+            txt.value = prompt(" 명언을 남기지 않으셨습니다.\n 명언을 남겨주세요 :)","");
+          }
+          switch(val){
+              case "haul":
+                  if(txt.value == "")
+                    break;
+                  else if(num == 1){
+                    txtarea.value =  "하울의 움직이는 성 : "+ txt.value +"\n\n";
+                  }
+                  else {
+                    txtarea.value = txtarea.value + "하울의 움직이는 성 : "+ txt.value +"\n\n";
+                  }
+                  num++;
+                  break;
+              case "sen":
+                  if(txt.value == "")
+                    break;
+                  else if(num == 1){
+                    txtarea.value = "센과 치히로의 행방불명 : "+ txt.value + "\n\n";
+                  }
+                  else{
+                    txtarea.value =  txtarea.value + "센과 치히로의 행방불명 : "+ txt.value + "\n\n";
+                  }
+                  num++;
+                  break;
+              case "totoro":
+                  if(txt.value == "")
+                    break;
+                  else if(num==1){
+                    txtarea.value = "이웃집 토토로 : "+ txt.value + "\n\n";
+                  }
+                  else{
+                    txtarea.value =  txtarea.value + "이웃집 토토로 : "+ txt.value + "\n\n";
+                  }
+                  num++;
+                  break;
+              case "ponyo":
+                  if(txt.value == "")
+                    break;
+                  else if(num==1){
+                    txtarea.value = "벼랑 위의 포뇨 : "+ txt.value + "\n\n";
+                  }
+                  else{
+                    txtarea.value =  txtarea.value + "벼랑 위의 포뇨 : "+ txt.value + "\n\n";
+                  }
+                  num++;
+                  break;
+          }
+          txt.value="";
+
+      }
+    </script>
+
+  </head>
+  <body>
+    <header id="header-area">
+      <a href="index.html"><h2>IN THE GHIBLI WORLD</h2></a>
+    </header>
+
+    <nav id="nav-area">
+      <span class="nav-span"> .｡.:* Quotes *:.｡. </span>
+
+    </nav>
+    <nav id="sub-nav-menu">
+      <a href="index.html">main</a>
+      <a href="introduction.html">introduction of films</a>
+      <a href="description.html">description of films</a>
+      <a href="quotes.html">quotes</a>
+      <a href="fanart.html">fanart</a>
+      <a href="store.html">store</a>
+    </nav>
+
+    <article class="menu-article-area" style="height:8500px">
+      <aside id="aside-area">
+        <dl class="dl-layout">
+          <br><dt><a href="#haul1">&nbsp;&nbsp;&nbsp; &nbsp;하울의 움직이는 성&nbsp;&nbsp;&nbsp;</a></dt>
+          <br><br><dt><a href="#sen1">&nbsp;&nbsp;&nbsp;&nbsp;센과 치히로의 행방불명&nbsp;&nbsp;&nbsp;</a></dt>
+          <br><br><dt><a href="#totoro1">&nbsp;&nbsp;&nbsp; &nbsp;이웃집 토토로&nbsp;&nbsp;&nbsp;</a></dt>
+          <br><br><dt><a href="#ponyo1">&nbsp;&nbsp;&nbsp;&nbsp;벼랑 위의 포뇨&nbsp;&nbsp;&nbsp;</a></dt>
+          <br><br><dt><a href="#q">&nbsp;&nbsp;&nbsp; &nbsp;명언 남기기&nbsp;&nbsp;&nbsp;</a></dt>
+          <br>
+          <!-- 명언 추가하기 칸 form으로 만들기 -->
+        </dl>
+      </aside>
+      <hr>
+      <section id="menu-section-area" style="height: 23%">
+        <figure>
+          <a id="haul1"></a>
+          <h2>하울의 움직이는 성</h2><br><br>
+          <div class="fig-div">
+            <img width="450" height="269" src="image/h_q1.gif" alt="하울의 움직이는 성">
+            <p><br>“<br><br>おいらを苛めたんだ！おいらが死んだら、ハウルだって死ぬんだぞ
+            <br><br>날 괴롭혔지! 내가 죽으면, 하울도 죽는다고!<br><br>”</p>
+          </div>
+          <div class="fig-div" style="margin-top:110px">
+            <img width="470" height="269" src="image/h_q2.gif" alt="하울의 움직이는 성">
+            <p><br>“<br><br>自分のことは自分で決めなきゃダメよ
+            <br><br>자기의 일을 스스로 결정하지 않으면 안 돼.<br><br>”</p>
+          </div>
+          <div class="fig-div" style="margin-top:110px">
+            <img width="470" height="269" src="image/h_q3.gif" alt="하울의 움직이는 성">
+            <p><br>“<br><br>I'm done for what's the point in living
+              <br> I'm not beautiful
+            <br><br>이젠 끝이야 아름답지 않으면 살아도 산게 아니야.<br><br>”</p>
+          </div>
+        </figure>
+      </section>
+      <section id="menu-section-area" style="height: 24%">
+          <figure>
+            <a id="sen1"></a>
+            <h2>센과 치히로의 행방불명</h2><br><br>
+            <div class="fig-div">
+              <img width="470" height="269" src="image/s_q1.gif" alt="센과 치히로의 행방불명">
+              <p><br>“<br><br>.嫌だとか、帰りたいとか言わせるように仕向けてくるけど<br>
+                働きたいとだけ言うんだ。 辛くても、耐えて機会を待つんだよ
+              <br><br>싫다던가, 돌아가고 싶어던가라고 말하고 싶어질때도 있겠지만, <br>
+              괴로워도 참고 기회를 기다리는거야<br><br>”</p>
+            </div>
+            <div class="fig-div" style="margin-top:110px">
+              <img width="470" height="269" src="image/s_q2.gif" alt="센과 치히로의 행방불명">
+              <p><br>“<br><br>一度あったことは忘れないものさ。思い出せないだけで
+              <br><br>한번만난건 잊지못하는거다 기억해내지 못하는것 뿐이지<br><br>”</p>
+            </div>
+            <div class="fig-div" style="margin-top:110px">
+              <img width="470" height="269" src="image/s_q3.gif" alt="센과 치히로의 행방불명">
+              <p><br>“<br><br>自分の名前を大事にね
+              <br><br>자신의 이름을 소중히 하렴<br><br>”</p>
+            </div>
+          </figure>
+      </section>
+      <section id="menu-section-area" style="height: 22.5%">
+        <figure>
+          <a id="totoro1"></a>
+          <h2>이웃집 토토로</h2><br><br>
+          <div class="fig-div">
+            <img width="470" height="269" src="image/t_q1.gif" alt="이웃집 토토로">
+            <p><br>“<br><br>みんな笑ってみな。おっかないのは逃げちゃうから
+            <br><br>이렇게 웃어봐, 그러면 무서운게 사라진단다.<br><br>”</p>
+          </div>
+          <div class="fig-div" style="margin-top:110px">
+            <img width="470" height="269" src="image/t_q2.gif" alt="이웃집 토토로">
+            <p><br>“
+            <br><br>꿈이었지만 꿈이 아니었어!<br><br>”</p>
+          </div>
+          <div class="fig-div" style="margin-top:110px">
+            <img width="470" height="269" src="image/t_q3.gif" alt="이웃집 토토로">
+            <p><br>“
+            <br><br>(책을읽다가)응? 독도는 한국땅?
+             <br><br> (잠시후 큰소리로)독도는 한국땅입니다!!!<br><br>”</p>
+          </div>
+        </figure>
+      </section>
+      <section id="menu-section-area" style="height: 23%">
+        <figure>
+          <a id="ponyo1"></a>
+          <h2>벼랑 위의 포뇨</h2><br><br>
+          <div class="fig-div">
+            <img width="470" height="269" src="image/p_q1.gif" alt="벼랑 위의 포뇨">
+            <p><br>“
+            <br><br>소스케 운명이라는게 있는거야
+            <br>괴로워도 운명을 바꿀수 없어
+            <br>포뇨는 바다에서 살 운명이라 바다로 간거야<br><br>”</p>
+          </div>
+          <div class="fig-div" style="margin-top:110px">
+            <img width="470" height="269" src="image/p_q2.gif" alt="벼랑 위의 포뇨">
+            <p><br>“
+            <br><br>우리집은 폭풍속의 등대야.
+            <br>어둠속에 있는 사람들이 우리집 불빛으로 용기를 얻고 있어.
+            <br>그러니까 누군가 지켜야해.
+            <br><br>”</p>
+          </div>
+          <div class="fig-div" style="margin-top:110px">
+            <img width="470" height="269" src="image/p_q3.gif" alt="벼랑 위의 포뇨">
+            <p><br>“
+            <br><br>지금 캄캄한 곳에 있는 사람들은 모두
+            <br>이 빛을 보고 희망을 가지니까,
+            <br>그래서 누군가는 여기 있어야 돼.
+            <br>이상한 일들이 많이 일어나지만 이유는 아직 잘 모르겠어.
+            <br>하지만 이제 곧 알게 되겠지.
+            <br><br>”</p>
+          </div>
+        </figure>
+      </section>
+      <section id="menu-section-area" style="height:5%; margin-top:60px; background-color: #B0C4DE; border-radius:15px">
+        <a id="q"></a>
+        <div style="text-align:center">
+          <div style="margin-top:40px">
+            <h2 style="font-family:StMarie-Thin; font-weight:bolder">&nbsp;&nbsp;&nbsp;Leave a quote</h2>
+          </div>
+          <form id="form-style"  method="" style="margin-top:30px">
+            <select id="sel" class="" name="movie" size="1" style=" width: 20%; height:2.8%;">
+              <option value="haul">하울의 움직이는 성</option>
+              <option value="sen">센과 치히로의 행방불명</option>
+              <option value="totoro">이웃집 토토로</option>
+              <option value="ponyo">벼랑 위의 포뇨</option>
+            </select>
+            <input id="inputText" type="text" size="70" name="contents" value="" style="height:14px;">
+            <input id="inputButton" type="button" value="남기기" style="width:10%; height:37px" onclick="addText();">
+        </div>
+        </form>
+        <section  id="menu-section-area" style="margin-top: 22px; width:94.5%; height:57.5%; margin-left:24px;  border-radius:15px">
+            <form class="" action="index.html" method="post">
+              <textarea id="txtarea" name="quotes" rows="17" cols="113" readonly style="overflow : auto; font-family:NanumSquare;">
+              </textarea>
+            </form>
+        </section>
+      </section>
+    </article>
+
+    <footer id="footer-area">
+      <span class="footer_span_font">＠Made by seulgi<br>Sookmyung Women's University</span>
+    </footer>
+  </body>
+  </body>
+</html>

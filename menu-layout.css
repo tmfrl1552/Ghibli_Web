@@ -1,0 +1,101 @@
+#aside-area{
+  float: left;
+  width: 20%;
+  height: 100%;
+  /*border: solid 2px black;*/
+}
+
+#sub-nav-menu{
+  display: flex;
+  background-color: white;
+  width: 600px;
+  height: 1.8em;
+  /*border: solid 2px black;*/
+  margin: 0 auto;
+  margin-top: 5px;
+  border-radius: 7px;
+}
+
+#sub-nav-menu a{
+  padding: 9.5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-family: StMarie-Thin;
+  font-size: 10.9px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.menu-article-area{
+  width: 74%;
+  height: 8800px;
+  /*border: solid 2px green;*/
+  /*contents area 가운데 정렬*/
+  margin: 0 auto;
+  margin-left: 120px;
+  margin-top: 105px;
+}
+
+.store-article-area{
+  width: 100%;
+  height: 1900px;
+  /*border: solid 2px green;*/
+  /*contents area 가운데 정렬*/
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+#menu-section-area{
+  float: left;
+  width: 70%;
+  height: 21%;
+  margin-top: 20px;
+  margin-left: 100px;
+  /*background-color: lightgrey;*/
+}
+
+
+.dl-layout{
+    border-radius: 7.8px;
+    background-color: #7EB300;
+    position: fixed;
+    font-size: 11.8px;
+    font-family: NanumSquare_acR;
+    color: white;
+}
+
+li{
+  line-height: 17.7px;
+}
+
+dl dt{
+
+  font-size: 13px;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+aside a:hover{
+  color: black;
+  font-weight: 900;
+}
+
+
+
+input[type="text"], input[type="button"], select, input[type="textarea"]{
+   width: 60%; /* 원하는 너비 설정 */
+   height: auto; /* 높이값 초기화 */
+   line-height : normal; /* line-height 초기화 */
+   padding: .8em .5em; /* 원하는 여백 설정, 상하단 여백으로 높이를 조절 */
+   font-family: NanumSquare; /* 폰트 상속 */
+   border: 1px solid #999;
+  border-radius: 0; /* iSO 둥근모서리 제거 */
+  outline-style: none; /* 포커스시 발생하는 효과 제거를 원한다면 */
+  -webkit-appearance: none; /* 브라우저별 기본 스타일링 제거 */
+  -moz-appearance: none; appearance: none;
+  }

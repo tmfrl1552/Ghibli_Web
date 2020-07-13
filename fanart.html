@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>In the Ghibli World</title>
+    <link rel="stylesheet" href="main-layout.css">
+    <link rel="stylesheet" href="menu-layout.css">
+    <style type="text/css">
+      .art-section{
+        float: left;
+        width: 100%;
+        height: 100%;
+        background-color: #7EB300;
+      }
+
+      #art-txt{
+        text-align: center;
+        font-size: 24px;
+        color: white;
+        margin-top: 100px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <header id="header-area">
+      <a href="index.html"><h2>IN THE GHIBLI WORLD</h2></a>
+    </header>
+
+    <nav id="nav-area">
+      <span class="nav-span"> .｡.:* Store *:.｡. </span>
+      <!--여기 밑에 조그만하게 menu 만들기-->
+    </nav>
+    <nav id="sub-nav-menu">
+      <a href="index.html">main</a>
+      <a href="introduction.html">introduction of films</a>
+      <a href="description.html">description of films</a>
+      <a href="quotes.html">quotes</a>
+      <a href="fanart.html">fanart</a>
+      <a href="store.html">store</a>
+    </nav>
+
+    <article class="store-article-area" style="height:1000px">
+      <section class="art-section" onmousedown="start();" onmousemove="draw();" onmouseup="stop();">
+        <div id="art-txt">
+          <h2>Drawing Fan Art</h2>
+        </div>
+        <div style="text-align:center; background-color:white; width:70%; height:70.18%; margin-left:240px;margin-top:80px">
+          <canvas id="myCanvas" width="1060px" height="700px" style="border: dashed 2px green;"></canvas>
+        </div>
+      </section>
+    </article>
+
+    <footer id="footer-area">
+      <span class="footer_span_font">＠Made by seulgi<br>Sookmyung Women's University</span>
+    </footer>
+    <script type="text/javascript">
+      var canvas = document.getElementById("myCanvas");
+      var myContext = canvas.getContext("2d");
+      var stopped = true;
+
+      function start(){
+        e = window.event;
+        myContext.moveTo(e.clientX-10, e.clientY-10);
+        stopped = false;
+      }
+      function stop(){
+        stopped = true;
+      }
+      function draw(){
+        if(!stopped){
+          e = window.event;
+          myContext.lineTo(e.clientX-10, e.clientY-10);
+          myContext.stroke();
+        }
+      }
+    </script>
+  </body>
+</html>
